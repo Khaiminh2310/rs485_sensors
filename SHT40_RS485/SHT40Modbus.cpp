@@ -37,6 +37,8 @@ SHT40::SHT40(uint8_t rxPin, uint8_t txPin, uint8_t ctrlPin, uint8_t addr)
 
   _ctrlPin = ctrlPin;
   _addr = addr;
+
+  pinMode(_ctrlPin, OUTPUT);
 }
 
 SHT40::SHT40(uint8_t rxPin, uint8_t txPin, uint8_t addr)
